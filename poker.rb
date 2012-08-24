@@ -1,7 +1,7 @@
 class Poker
   attr_accessor :community_hand, :winner
   # def community_hand= comcards
-  #   puts comcards
+  # puts comcards
   # end
   def player_hand player,card1,card2
     @players [player] = [card1,card2]
