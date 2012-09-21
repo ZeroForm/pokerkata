@@ -16,11 +16,11 @@ Given /^player (\d+) has "(.*?)","(.*?)"$/ do |player, card1, card2|
 end
 
 Then /^player (\d+) has a winning hand$/ do |player|
-  @game.winner.include?(player).should == true
+  @game.players[player].winner.should == true
 end
 
 Then /^player (\d+) does not have a winning hand$/ do |player|
-    @game.winner.include?(player).should == false
+    @game.players[player].winner.should == false
 end
 
 
